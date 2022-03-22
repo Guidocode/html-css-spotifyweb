@@ -1,0 +1,42 @@
+/* 
+  MAIN 
+*/
+main{
+  height: calc(100vh - 80px);
+}
+
+/* MAIN TOP  */
+.main-top{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 200px);
+  height: 80px;
+}
+/* /MAIN TOP  */
+
+
+/* MAIN LEFT  */
+.main-left{
+  width: 200px;
+  height: 100%;
+}
+/* /MAIN LEFT  */
+
+
+/* MAIN RIGHT  */
+.main-right{
+  width: calc(100% - 200px);
+  height: 100%;
+}
+/* /MAIN RIGHT  */
+
+
+
+
+/* 
+  FOOTER 
+*/
+footer{
+  height: 80px;
+}

@@ -1,0 +1,14 @@
+
+/* MOBILE  */
+@media screen and (max-width: 419px){
+  .main-left{
+    width: 50px;
+  }
+
+  .main-top,
+  .main-right{
+    width: calc(100% - 50px);
+  }
+
+}
+/* /MOBILE  */
