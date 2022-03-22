@@ -31,6 +31,8 @@ main{
 /* /MAIN TOP  */
 
 
+
+
 /* MAIN LEFT  */
 .main-left .mobile{
   display: none;
@@ -117,10 +119,30 @@ main{
 /* /MAIN LEFT  */
 
 
+
+
 /* MAIN RIGHT  */
 .main-right{
   width: calc(100% - 200px);
   height: 100%;
+  padding-top: 70px;
+  overflow-y: auto;
+}
+
+.main-right nav{
+ width: 50%;
+ justify-content: center;
+}
+
+.main-right ul{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-right ul li a{
+  flex-shrink: 0;
+  font-size: 12px;
 }
 /* /MAIN RIGHT  */
 
