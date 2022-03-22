@@ -7,14 +7,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 
-  <title>Spotify</title>
+  <title>Spotify Web</title>
 </head>
 <body>
   
@@ -30,7 +32,80 @@
 
 
     <!-- MAIN LEFT   -->
-    <div class="main-left float-left debug"></div>
+    <div class="main-left float-left">
+
+      <div class="content d-flex">
+
+        
+        <div>
+          <!-- Desk  -->
+          <div class="desk logo">
+            <img src="./img/logo.svg" alt="Logo Spotify">
+          </div>
+          <!-- /Desk  -->
+
+          <!-- Mobile  -->
+          <div class="logo mobile">
+            <img src="./img/logo-small.svg" alt="">
+          </div>
+          <!-- /Mobile  -->
+  
+          <nav>
+            <!-- Desk  -->
+            <ul class="desk">
+              <li class="active"><a href="#"><i class="fa-solid fa-house"></i><span> Home</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i><span> Cerca</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-book-open"></i><span> La tua libreria</span></a></li>
+            </ul>
+            <!-- /Desk  -->
+
+            <!-- Mobile  -->
+            <div class="mobile">
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i></a></li>
+              </ul>
+            </div>
+            <!-- /Mobile  -->
+  
+            <!-- Desk  -->
+            <h6 class="desk">playlist</h6>
+            <ul class="desk">
+              <li><i class="box-add fa-solid fa-plus"></i> Crea playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+            </ul>
+            <!-- /Desk  -->
+
+          </nav>
+        </div>
+
+        <!-- Desk  -->
+        <div class="desk app-user">
+          <div class="app"><i class="fa-regular fa-circle-down"></i> Installa app</div>
+          <div class="false-hr"></div>
+          <div class="user"><i class="fa-solid fa-circle-user"></i> Guido B</div>
+        </div>
+        <!-- /Desk  -->
+
+        <!-- Mobile  -->
+        <div class="mobile">
+          <div class="app-user">
+            <div class="app"><i class="fa-regular fa-circle-down"></i></div>
+            <div class="user"><i class="fa-solid fa-circle-user"></i></div>
+          </div>
+        </div>
+        <!-- /Mobile  -->
+
+      </div>
+      
+    </div>
     <!-- /MAIN LEFT   -->
 
 

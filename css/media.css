@@ -10,5 +10,17 @@
     width: calc(100% - 50px);
   }
 
+  .main-left .mobile{
+    display: block;
+  }
+
+  .main-left .desk{
+    display: none;
+  }
+
+  .main-left .app-user .app{
+    text-align: center;
+  }
+
 }
 /* /MOBILE  */

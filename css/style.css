@@ -32,9 +32,87 @@ main{
 
 
 /* MAIN LEFT  */
+.main-left .mobile{
+  display: none;
+}
+
 .main-left{
   width: 200px;
   height: 100%;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.main-left .content{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main-left .content i{
+  font-size: 20px;
+  vertical-align: middle;
+  color: #A2A3A3;
+}
+
+.main-left .content .logo{
+  width: 60%;
+  margin: 10px;
+}
+
+.main-left .content span{
+  vertical-align: middle;
+}
+
+.main-left .content ul li{
+  padding: 8px 15px;
+  font-size: 12px;
+}
+
+.main-left .content .active{
+  border-left: 2px solid #ADFF2E;
+}
+
+.main-left .content .active i{
+  color: #A2A3A3;
+}
+
+.main-left .content .box-add{
+  padding: 8px 10px;
+  background-color: #A2A3A3;
+  color: black;
+}
+
+.main-left .content h6{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+.app-user{
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #717272;
+}
+
+.app-user .false-hr{
+  border-bottom: 1px solid #717272;
+}
+
+.app-user .app{
+  padding: 8px 0;
+}
+
+.app-user .app i{
+  font-size: 12px;
+}
+
+.app-user .user{
+  padding: 8px 0;
+  color: white;
 }
 /* /MAIN LEFT  */
 
