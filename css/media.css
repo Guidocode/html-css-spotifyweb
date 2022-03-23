@@ -1,6 +1,8 @@
 
 /* MOBILE  */
-@media screen and (max-width: 419px){
+@media screen and (max-width: 440px){
+  
+  /* Main top, main left  */
   .main-left{
     width: 50px;
   }
@@ -21,6 +23,28 @@
   .main-left .app-user .app{
     text-align: center;
   }
-
+  /* /Main top, main left  */
 }
 /* /MOBILE  */
+
+
+
+/* TABLET  */
+@media screen and (max-width: 860px){
+  
+  /* Main right */
+  .main-right .covers{
+    width: calc(100% / 4 - 20px);
+  }
+  /* /Main right */
+}
+
+@media screen and (max-width: 650px){
+  
+  /* Main right */
+  .main-right .covers{
+    width: calc(100% / 2 - 20px);
+  }
+  /* /Main right */
+}
+/* /TABLET  */
