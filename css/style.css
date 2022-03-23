@@ -2,7 +2,7 @@
   MAIN 
 */
 main{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
 }
 
 /* MAIN TOP  */
@@ -14,6 +14,7 @@ main{
   height: 70px;
   text-align: right;
   background-color: rgba(0, 0, 0, .5);
+  z-index: 999;
 }
 
 .main-top button{
@@ -209,5 +210,102 @@ main{
   FOOTER 
 */
 footer{
-  height: 80px;
+  padding: 0 5px;
 }
+
+.player{
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Album  */
+.player-album .album-image{
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.player-album .album-image img{
+  width: 100%;
+}
+
+.player-album .album-text{
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.player-album .album-text h5{
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.player-album .album-text span{
+  color: #717272;
+  font-size: 8px;
+  vertical-align: middle;
+}
+
+.player-album .like-folder{
+  width: 40px;
+  justify-content: space-between;
+  align-items: center;
+  color: #717272;
+  cursor: pointer;
+}
+/* /Album  */
+
+
+/* Controller  */
+.player-controller{
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-controller .controller-top{
+  color: white;
+  align-items: baseline;
+}
+
+.player-controller .controller-top .fa-circle-play{
+  font-size: 25px;
+}
+
+.player-controller .controller-top div{
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.player-controller .controller-bottom div{
+  display: inline-block;
+  margin: 10px;
+}
+
+.player-controller .controller-bottom .song-time{
+  color: white;
+  font-size: 10px;
+}
+
+.player-controller .controller-bottom .song-bar{
+  width: 350px;
+  height: 4px;
+  background-color: #717272;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* /Controller  */
+
+
+
+/* Audio  */
+.player-audio{
+  width: 200px;
+}
+/* /Audio  */
