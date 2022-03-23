@@ -186,6 +186,7 @@ main{
 
 .main-right .cover-text{
   text-align: center;
+  padding: 5px;
 }
 
 .main-right .cover-text h5{
@@ -210,11 +211,13 @@ main{
   FOOTER 
 */
 footer{
-  padding: 0 5px;
+  height: 70px;
+  padding-left: 10px;
+  background-color: #282828;
 }
 
 .player{
-  height: 70px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -257,6 +260,7 @@ footer{
   align-items: center;
   color: #717272;
   cursor: pointer;
+  font-size: 14px;
 }
 /* /Album  */
 
@@ -270,7 +274,7 @@ footer{
 
 .player-controller .controller-top{
   color: white;
-  align-items: baseline;
+  align-items: center;
 }
 
 .player-controller .controller-top .fa-circle-play{
@@ -279,27 +283,56 @@ footer{
 
 .player-controller .controller-top div{
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
+/* Da rivedere  */
+.player-controller .controller-bottom{
+  align-items: center;
+  width: 40vw;
+}
+
 .player-controller .controller-bottom div{
-  display: inline-block;
-  margin: 10px;
+  /* display: inline-block; */
+  margin: 0 10px;
+  /* vertical-align: middle; */
+  cursor: pointer;
+  
 }
 
 .player-controller .controller-bottom .song-time{
   color: white;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .player-controller .controller-bottom .song-bar{
-  width: 350px;
-  height: 4px;
+  width: 30vw;
+  height: 3px;
   background-color: #717272;
   border-radius: 5px;
-  cursor: pointer;
+  position: relative;
 }
+
+.controller-bottom .song-bar .advancement-song-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  height: 3px;
+  background-color: #C1C1C1;
+  border-radius: 5px;
+  margin: 0;
+}
+
+
+/* Non funziona  */
+.player-album,
+.player-controller,
+.player-audio{
+  /* flex-shrink: 0; */
+}
+
 /* /Controller  */
 
 
@@ -307,5 +340,33 @@ footer{
 /* Audio  */
 .player-audio{
   width: 200px;
+}
+
+.player-audio div{
+  margin-left: 10px;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.player-audio .volume-bar{
+  width: 100px;
+  height: 3px;
+  background-color: #717272;
+  border-radius: 5px;
+  position: relative;
+}
+
+.player-audio .advancement-volume-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #C1C1C1;
+  border-radius: 5px;
+  margin: 0;
 }
 /* /Audio  */
