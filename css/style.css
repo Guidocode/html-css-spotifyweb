@@ -5,6 +5,7 @@ main{
   height: calc(100vh - 70px);
 }
 
+
 /* MAIN TOP  */
 .main-top{
   position: fixed;
@@ -235,11 +236,15 @@ main{
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
   cursor: pointer;
-  transition: .2s;
+  transition: all .3s;
+  background-color: rgba(61, 63, 61, 0.1);
+  padding: 10px 10px 0 10px;
+  border-radius: 10px;
 }
 
 .main-right .covers:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+  background-color: rgba(61, 63, 61, 0.4);
 }
 
 .main-right .cover-image{
@@ -262,6 +267,18 @@ main{
   font-size: 50px;
   justify-content: center;
   align-items: center;
+}
+
+.main-right .covers:hover .play-hover{
+  animation-name: play;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes play{
+  0%{transform: scale(1)}
+  50%{transform: scale(1.2)}
 }
 
 .main-right .covers:hover .layover{
