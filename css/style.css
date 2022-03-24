@@ -52,6 +52,11 @@ main{
   height: 100%;
 }
 
+/* Non funziona */
+.main-left .content .overflow{
+  overflow: auto;
+}
+
 .main-left .content .icon{
   width: 20px;
   vertical-align: middle;
@@ -255,12 +260,15 @@ footer{
 }
 
 .player-album .like-folder{
-  width: 40px;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   color: #717272;
   cursor: pointer;
   font-size: 14px;
+}
+
+.player-album .like-folder div{
+  margin-right: 10px;
 }
 /* /Album  */
 
@@ -275,6 +283,7 @@ footer{
 .player-controller .controller-top{
   color: white;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .player-controller .controller-top .fa-circle-play{
@@ -282,7 +291,7 @@ footer{
 }
 
 .player-controller .controller-top div{
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 10px;
   cursor: pointer;
 }
@@ -298,7 +307,6 @@ footer{
   margin: 0 10px;
   /* vertical-align: middle; */
   cursor: pointer;
-  
 }
 
 .player-controller .controller-bottom .song-time{
@@ -324,15 +332,6 @@ footer{
   border-radius: 5px;
   margin: 0;
 }
-
-
-/* Non funziona  */
-.player-album,
-.player-controller,
-.player-audio{
-  /* flex-shrink: 0; */
-}
-
 /* /Controller  */
 
 
@@ -340,13 +339,14 @@ footer{
 /* Audio  */
 .player-audio{
   width: 200px;
+  align-items: center;
 }
 
 .player-audio div{
   margin-left: 10px;
   font-size: 12px;
   color: white;
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   cursor: pointer;
 }

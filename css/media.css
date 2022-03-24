@@ -1,6 +1,6 @@
 
 /* MOBILE  */
-@media screen and (max-width: 440px){
+@media screen and (max-width: 520px){
   
   /* Main top, main left  */
   .main-left{
@@ -30,7 +30,7 @@
 
 
 /* TABLET  */
-@media screen and (max-width: 860px){
+@media screen and (max-width: 900px){
   
   /* Main right */
   .main-right .covers{
