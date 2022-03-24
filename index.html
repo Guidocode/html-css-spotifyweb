@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/media.css">
 
   <title>Spotify Web</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 <body>
   
@@ -53,7 +54,7 @@
           <nav>
             <!-- Desk  -->
             <ul class="desk">
-              <li class="active"><img class="icon" src="./img/home.svg" alt="Home"><span> Home</span></a></li>
+              <li class="active"><a href="#"><img class="icon" src="./img/home.svg" alt="Home"><span> Home</span></a></li>
               <li><a href="#"><img class="icon" src="./img/search.svg" alt="Cerca"><span> Cerca</span></a></li>
               <li><a href="#"><img class="icon" src="./img/libreria.svg" alt="Libreria"><span> La tua libreria</span></a></li>
             </ul>
@@ -72,7 +73,7 @@
             <!-- Desk  -->
             <h6 class="desk">playlist</h6>
             <ul class="overflow desk">
-              <li><i class="box-add fa-solid fa-plus"></i> Crea playlist</li>
+              <li><i class="box-add fa-solid fa-plus"></i><span> Crea playlist</span></li>
               <li>Nome playlist</li>
               <li>Nome playlist</li>
               <li>Nome playlist</li>
@@ -115,7 +116,7 @@
       <!-- Nav bar  -->
       <nav>
         <ul>
-          <li><a href="#">in evidenza</a></li>
+          <li class="active"><a href="#">in evidenza</a></li>
           <li><a href="#">podcast</a></li>
           <li><a href="#">classifiche</a></li>
           <li><a href="#">generi e mood</a></li>
@@ -137,6 +138,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/metal_lifting.jpg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>Heavy Metal</h5>
@@ -147,6 +151,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/stranger.jpeg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
@@ -157,6 +164,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/aquietplace.jpeg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>A quiet place</h5>
@@ -167,6 +177,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/split.jpeg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>Split</h5>
@@ -177,6 +190,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/cure.jpeg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>A cure for wellness</h5>
@@ -187,6 +203,9 @@
           <div class="covers">
             <div class="cover-image">
               <img src="./img/sinister.jpeg" alt="">
+              <div class="layover">
+                <div class="play-hover d-flex"><i class="fa-regular fa-circle-play"></i></div>
+              </div>
             </div>
             <div class="cover-text">
               <h5>Sinister</h5>
@@ -286,8 +305,8 @@
         </div>
 
         <div class="like-folder d-flex">
-          <div class="like"><i class="fa-regular fa-heart"></i></div>
-          <div class="folder"><i class="fa-regular fa-folder"></i></div>
+          <div><i class="fa-regular fa-heart"></i></div>
+          <div><i class="fa-regular fa-folder"></i></div>
         </div>
 
       </div>
@@ -308,7 +327,9 @@
         <div class="controller-bottom d-flex">
           <div class="song-time">0:25</div>
           <div class="song-bar">
-            <div class="advancement-song-bar"></div>
+            <div class="advancement-song-bar d-flex">
+              <div class="advancement-circle"></div>
+            </div>
           </div>
           <div class="song-time">4:35</div>
         </div>
@@ -323,7 +344,9 @@
         <div><i class="fa-solid fa-desktop"></i></div>
         <div><i class="fa-solid fa-volume-high"></i></div>
         <div class="volume-bar">
-          <div class="advancement-volume-bar"></div>
+          <div class="advancement-volume-bar d-flex">
+            <div class="advancement-circle"></div>
+          </div>
         </div>
       </div>
       <!-- /Audio -->
