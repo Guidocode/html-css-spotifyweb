@@ -46,7 +46,7 @@ main{
 .main-left{
   width: 200px;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background-color: black;
 }
 
@@ -58,7 +58,8 @@ main{
 
 /* Non funziona */
 .main-left .content .overflow{
-  overflow: auto;
+  height: 50%;
+  overflow-y: auto;
 }
 
 .main-left .content .icon{
@@ -213,6 +214,11 @@ main{
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
   cursor: pointer;
+  transition: .3s;
+}
+
+.main-right .covers:hover{
+  transform: scale(1.1);
 }
 
 .main-right .cover-image{
@@ -237,7 +243,7 @@ main{
   align-items: center;
 }
 
-.main-right .cover-image:hover .layover{
+.main-right .covers:hover .layover{
   display: block;
 }
 
