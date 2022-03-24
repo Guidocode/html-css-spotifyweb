@@ -56,19 +56,23 @@ main{
   height: 100%;
 }
 
-.main-right .sub-content{
-  display: flex;
+.main-left .sub-content{
   height: 100%;
+  overflow: hidden;
+  display: flex;
   flex-direction: column;
 }
 
 .main-left .content nav{
   height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Non funziona */
-.main-left .content ul .overflow{
-  height: 60%;
+.main-left .content ul.overflow{
+  height: 100%;
   overflow-y: auto;
 }
 
