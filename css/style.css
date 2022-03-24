@@ -290,6 +290,18 @@ main{
 #artisti .cover-image img{
   border-radius: 50%;
 }
+
+/* trick per vedere bene ancoraggio */
+#nav-center::before,
+#recently::before,
+#per-te::before,
+#artisti::before{
+  content: '';
+  display: block;
+  height: 80px;
+  margin: -80px 0 0;
+}
+/* /trick per vedere bene ancoraggio */
 /* /MAIN RIGHT  */
 
 
