@@ -28,6 +28,7 @@ main{
   cursor: pointer;
   text-transform: uppercase;
   font-size: 11px;
+  transition: .2s;
 }
 
 .main-top button:hover{
@@ -46,7 +47,6 @@ main{
 .main-left{
   width: 200px;
   height: 100%;
-  /* overflow-y: auto; */
   background-color: black;
 }
 
@@ -56,9 +56,19 @@ main{
   height: 100%;
 }
 
+.main-right .sub-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.main-left .content nav{
+  height: 100%;
+}
+
 /* Non funziona */
-.main-left .content .overflow{
-  height: 50%;
+.main-left .content ul .overflow{
+  height: 60%;
   overflow-y: auto;
 }
 
@@ -184,6 +194,14 @@ main{
 
 .main-right ul li.active{
   border-bottom: 2px solid #ADFF2E;
+  position: relative;
+}
+
+.main-right ul li.active::after{
+  content: '';
+  position: absolute;
+  bottom: -8;
+  right: -2;
 }
 
 .main-right ul li:hover a{
@@ -214,7 +232,7 @@ main{
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
   cursor: pointer;
-  transition: .3s;
+  transition: .2s;
 }
 
 .main-right .covers:hover{
@@ -231,7 +249,7 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .5);
   display: none;
 }
 
@@ -411,7 +429,7 @@ footer{
   align-items: center;
 }
 
-.controller-bottom .advancement-song-bar:hover{
+.controller-bottom .song-bar:hover .advancement-song-bar{
   background-color: #ADFF2E;
 }
 
@@ -424,7 +442,7 @@ footer{
   display: none;
 }
 
-.controller-bottom .advancement-song-bar:hover .advancement-circle{
+.controller-bottom .song-bar:hover .advancement-circle{
   display: block;
 }
 /* /Controller  */
@@ -467,7 +485,7 @@ footer{
   align-items: center;
 }
 
-.player-audio .advancement-volume-bar:hover{
+.player-audio .volume-bar:hover .advancement-volume-bar{
   background-color: #ADFF2E;
 }
 
@@ -480,7 +498,7 @@ footer{
   display: none;
 }
 
-.player-audio .advancement-volume-bar:hover .advancement-circle{
+.player-audio .volume-bar:hover .advancement-circle{
   display: block;
 }
 /* /Audio  */
