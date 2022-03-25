@@ -194,19 +194,27 @@ main{
   font-size: 11px;
   text-transform: uppercase;
   margin: 0 5px;
+  
 }
 
-.main-right ul li.active{
-  border-bottom: 2px solid #ADFF2E;
+/* Falso border bottom active con dimensione  */
+.main-right ul li a.active{
   position: relative;
+  padding: 3px 0;
 }
 
-.main-right ul li.active::after{
+.main-right ul li a.active::after{
   content: '';
   position: absolute;
-  bottom: -8;
-  right: -2;
+  bottom: 0;
+  right: 10%;
+  transform: translate(-50%);
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #ADFF2E;
 }
+/* /Falso border bottom active con dimensione  */
 
 .main-right ul li:hover a{
   color: white;
