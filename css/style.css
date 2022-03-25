@@ -242,7 +242,7 @@ main{
 /* Nelle dimensioni per tablet divido per 4 e 2  */
 .main-right .covers{
   width: calc(100% / 6 - 20px);
-  margin: 0 10px;
+  margin: 5px 10px;
   cursor: pointer;
   transition: all .3s;
   background-color: rgba(61, 63, 61, 0.1);

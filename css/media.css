@@ -34,7 +34,8 @@
   
   /* Main right */
   .main-right .covers{
-    width: calc(100% / 4 - 20px);
+    width: calc(100% / 4 - 10px);
+    margin: 5px;
   }
   /* /Main right */
 }
@@ -43,7 +44,7 @@
   
   /* Main right */
   .main-right .covers{
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 2 - 10px);
   }
   /* /Main right */
 }
